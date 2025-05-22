@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Dashboard - Tabler - Premium and Open Source dashboard template with responsive and high quality UI.</title>
-    <script defer data-api="/stats/event" data-domain="preview.tabler.io" src="{{ asset('assets/js/tabler/script.js') }}"></script>
+    <script defer data-api="/stats/event" data-domain="preview.tabler.io" src="{{ secure_asset('assets/js/tabler/script.js') }}"></script>
     <meta name="msapplication-TileColor" content="#066fd1" />
     <meta name="theme-color" content="#066fd1" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
@@ -30,25 +30,25 @@
     <meta property="og:url" content="https://preview.tabler.io/static/og.png" />
     <meta property="og:description" content="Tabler is packed with beautifully crafted components and powerful features. Jump in and start building a stunning dashboard — all for free!" />
     <!-- BEGIN PAGE LEVEL STYLES -->
-    <link href="{{ asset('assets/css/tabler/jsvectormap.css') }}" rel="stylesheet" />
+    <link href="{{ secure_asset('assets/css/tabler/jsvectormap.css') }}" rel="stylesheet" />
     <!-- END PAGE LEVEL STYLES -->
     <!-- BEGIN GLOBAL MANDATORY STYLES -->
-    <link href="{{ asset('assets/css/tabler/tabler.min.css') }}" rel="stylesheet"    />
+    <link href="{{ secure_asset('assets/css/tabler/tabler.min.css') }}" rel="stylesheet"    />
     <!-- END GLOBAL MANDATORY STYLES -->
     <!-- BEGIN PLUGINS STYLES -->
-    <link href="{{ asset('assets/css/tabler/tabler.flags.min.css') }}" rel="stylesheet" />
-    <link href="{{ asset('assets/css/tabler/tabler.socials.min.css') }}" rel="stylesheet"/>
-    <link href="{{ asset('assets/css/tabler/tabler.payments.min.css') }}" rel="stylesheet" />
-    <link href="{{ asset('assets/css/tabler/tabler.vendors.min.css') }}" rel="stylesheet"/>
-    <link href="{{ asset('assets/css/tabler/tabler.marketing.min.css') }}" rel="stylesheet"/>
-    <link href="{{ asset('assets/css/tabler/tabler.themes.min.css') }}" rel="stylesheet"/>
+    <link href="{{ secure_asset('assets/css/tabler/tabler.flags.min.css') }}" rel="stylesheet" />
+    <link href="{{ secure_asset('assets/css/tabler/tabler.socials.min.css') }}" rel="stylesheet"/>
+    <link href="{{ secure_asset('assets/css/tabler/tabler.payments.min.css') }}" rel="stylesheet" />
+    <link href="{{ secure_asset('assets/css/tabler/tabler.vendors.min.css') }}" rel="stylesheet"/>
+    <link href="{{ secure_asset('assets/css/tabler/tabler.marketing.min.css') }}" rel="stylesheet"/>
+    <link href="{{ secure_asset('assets/css/tabler/tabler.themes.min.css') }}" rel="stylesheet"/>
     <!-- DATE PICKER -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.0/css/datepicker.css" rel="stylesheet" type="text/css" />
     <!-- LEAFET -->
       <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
     <!-- END PLUGINS STYLES -->
     <!-- BEGIN DEMO STYLES -->
-    <link href="{{ asset('assets/css/tabler/demo.min.css') }}" rel="stylesheet"/>
+    <link href="{{ secure_asset('assets/css/tabler/demo.min.css') }}" rel="stylesheet"/>
     <!-- END DEMO STYLES -->
     <!-- BEGIN CUSTOM FONT -->
     <style>
@@ -58,7 +58,7 @@
   </head>
   <body>
     <!-- BEGIN GLOBAL THEME SCRIPT -->
-    <script src="{{ asset('assets/js/tabler/tabler-theme.min.js') }}"></script>
+    <script src="{{ secure_asset('assets/js/tabler/tabler-theme.min.js') }}"></script>
     <!-- END GLOBAL THEME SCRIPT -->
     <div class="page">
       <!--  BEGIN SIDEBAR  -->
@@ -460,18 +460,18 @@
       </form>
     </div>
     <!-- BEGIN PAGE LIBRARIES -->
-    <script src="{{ asset('assets/js/tabler/apexcharts.min.js') }}"></script>
-    <script src="{{ asset('assets/js/tabler/jsvectormap.min.js') }}"></script>
-    <script src="{{ asset('assets/js/tabler/world.js') }}"></script>
-    <script src="{{ asset('assets/js/tabler/world-merc.js') }}"></script>
+    <script src="{{ secure_asset('assets/js/tabler/apexcharts.min.js') }}"></script>
+    <script src="{{ secure_asset('assets/js/tabler/jsvectormap.min.js') }}"></script>
+    <script src="{{ secure_asset('assets/js/tabler/world.js') }}"></script>
+    <script src="{{ secure_asset('assets/js/tabler/world-merc.js') }}"></script>
     <!-- END PAGE LIBRARIES -->
     <!-- BEGIN GLOBAL MANDATORY SCRIPTS -->
-    <script src="{{ asset('assets/js/tabler/tabler.min.js') }}"></script>
+    <script src="{{ secure_asset('assets/js/tabler/tabler.min.js') }}"></script>
     <!-- END GLOBAL MANDATORY SCRIPTS -->
     <!-- BEGIN DEMO SCRIPTS -->
-    <script src="{{ asset('assets/js/tabler/demo.min.js') }}"></script>
+    <script src="{{ secure_asset('assets/js/tabler/demo.min.js') }}"></script>
     <!-- END DEMO SCRIPTS -->
-    <script src="{{ asset('assets/js/tabler/beacon.min.js') }}"></script>
+    <script src="{{ secure_asset('assets/js/tabler/beacon.min.js') }}"></script>
     <!-- MODALS -->
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>    
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>

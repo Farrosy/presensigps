@@ -21,5 +21,5 @@ RUN chmod -R 755 /app && chown -R www-data:www-data /app
 # Expose port
 EXPOSE 8080
 
-# Run Laravel using PHP built-in server
-CMD php -S 0.0.0.0:8080 -t public
+# Jalankan Laravel dengan router custom
+CMD php -S 0.0.0.0:8080 server.php
