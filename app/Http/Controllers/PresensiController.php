@@ -315,9 +315,14 @@ class PresensiController extends Controller
     {
         $izinsakit = DB::table('pengajuan_izin')
         ->join('karyawan','pengajuan_izin.nik','=','karyawan.nik')
+        ->orderBy('tgl_izin','desc')
         ->get();
         return view('presensi.izinsakit',compact('izinsakit'));
     }
 
-    
+    public function approvedizinsakit(Request $request)
+    {
+        $status_approved = $request->status_approved;
+        $update = DB::table('pengajuan_izin');
+    }    
 }

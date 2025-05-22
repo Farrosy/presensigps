@@ -19,19 +19,19 @@ class KaryawanSeeder extends Seeder
             'nama_lengkap' => 'Farros',
             'jabatan' => 'Head Of IT',
             'no_hp' => '082345',
-            'foto' => '',
+            'foto' => '123.png',
             'kode_dept' => 'IT',
             'password' => Hash::make('asd'),
         ]);
 
         Karyawan::create([
             'nik' => '321',
-            'nama_lengkap' => 'Rizky',
+            'nama_lengkap' => 'Adit',
             'jabatan' => 'Manager HRD',
             'no_hp' => '0899123456',
-            'foto' => '',
+            'foto' => '321.jpg',
             'kode_dept' => 'HRD',
-            'password' => Hash::make('asd'),
+            'password' => Hash::make('dsa'),
         ]);
     }
 }
