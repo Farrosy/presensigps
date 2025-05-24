@@ -19,7 +19,7 @@ class KonfigurasiController extends Controller
         $lokasi_kantor = $request->lokasi_kantor;
         $radius = $request->radius;
 
-        $update = DB::table('Konfigurasi_lokasi')->where('id',1)->update([
+        $update = DB::table('konfigurasi_lokasi')->where('id',1)->update([
             'lokasi_kantor' =>  $lokasi_kantor,
             'radius' =>  $radius,
         ]);
