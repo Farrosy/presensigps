@@ -1,9 +1,0 @@
-{
-  "build": {
-    "builder": "nixpacks",
-    "config": {
-      "startCommand": "bash start.sh",
-      "setupCommand": "bash setup.sh"
-    }
-  }
-}
