@@ -43,7 +43,7 @@
                                         <th>Lokasi</th>
                                     </tr>
                                 </thead>
-                                <tbody id="loadpresensi">
+                                <tbody class="loadpresensi">
                                     <tr>
                                         <td></td>
                                     </tr>
@@ -93,7 +93,7 @@ $(function () {
             },
             cache:false,
             success:function(respond){
-                $("#loadpresensi").html(respond);
+                $(".loadpresensi").html(respond);
             }
         });
     }

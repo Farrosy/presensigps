@@ -8,7 +8,10 @@
         </a>
     </div>
     <div class="pageTitle">Edit Profile</div>
-    <div class="right"></div>
+    
+    <div class="right">
+    </div>
+    
 </div>
 <!-- * App Header  -->
 @endsection
@@ -71,6 +74,17 @@
                 </button>
             </div>
         </div>
+    </form>
+    <form action="/proseslogout" method="POST" style="display:inline;">
+        @csrf
+        <div class="form-group boxed">
+        <div class="input-wrapper">
+            <button type="submit" class="btn btn-danger btn-block">
+                <ion-icon name="log-out-outline"></ion-icon> 
+                Logout
+            </button>
+        </div>
     </div>
-</form>
+    </form>
+</div>
 @endsection

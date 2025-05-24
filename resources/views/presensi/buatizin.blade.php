@@ -47,6 +47,31 @@
 <script>
     var currYear = (new Date()).getFullYear();
 
+    $("#tgl_izin").change(function(e){
+        var tgl_izin = $(this).val();
+        $.ajax({
+            type:'post',
+            url:'/presensi/cekpengajuanizin',
+            data : {
+                _token: "{{ csrf_token() }}",
+                tgl_izin: tgl_izin
+            },
+            cache: false,
+            success: function(respond){
+                console.log(respond); // Tambahkan ini untuk debugging
+                if(respond==1){
+                    Swal.fire({
+                        title: 'Oops !',
+                        text: 'Anda Sudah Melakukan Input Pengajuan Izin Pada Tanggal Tersebut!',
+                        icon: 'warning'
+                    }).then((result) => {
+                        $("#tgl_izin").val("");
+                    });
+                }
+            }
+        });
+    });
+
     $(document).ready(function() {
     $(".datepicker").datepicker({
     format: "yyyy-mm-dd"    

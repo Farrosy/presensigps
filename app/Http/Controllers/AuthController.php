@@ -15,7 +15,7 @@ class AuthController extends Controller
         {
             return redirect('/dashboard');
         } else {
-            return redirect('/')->with(['error', 'Login Gagal']);
+            return redirect('/')->with('error', 'Login Gagal');
         }
     }
 

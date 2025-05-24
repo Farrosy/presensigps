@@ -26,7 +26,7 @@ Route::middleware(['guest:user'])->group(function(){
 
 Route::middleware(['auth:karyawan'])->group(function(){
     Route::get('/dashboard', [DashboardController::class, 'index']);
-    Route::get('/proseslogout', [AuthController::class, 'proseslogout']);
+    Route::post('/proseslogout', [AuthController::class, 'proseslogout']);
 
     //Presensi
     Route::get('/presensi/create',[PresensiController::class, 'create']);
@@ -44,6 +44,8 @@ Route::middleware(['auth:karyawan'])->group(function(){
     Route::get('/presensi/izin',[PresensiController::class, 'izin']);
     Route::get('/presensi/buatizin',[PresensiController::class, 'buatizin']);
     Route::post('/presensi/storeizin',[PresensiController::class, 'storeizin']);
+    Route::post('/presensi/cekpengajuanizin', [PresensiController::class, 'cekpengajuanizin']);
+
 });
 
 
@@ -74,7 +76,8 @@ Route::middleware(['auth:user'])->group(function() {
     Route::get('/presensi/rekap', [PresensiController::class, 'rekap']);
     Route::POST('/presensi/cetakrekap', [PresensiController::class, 'cetakrekap']);
     Route::get('/presensi/izinsakit', [PresensiController::class, 'izinsakit']);
-    Route::post('/presensi/approveizinsakit', [PresensiController::class, 'approveizinsakit']);
+    Route::post('/presensi/approvedizinsakit', [PresensiController::class, 'approvedizinsakit']);
+    Route::get('/presensi/{id}/batalkanizinsakit', [PresensiController::class, 'batalkanizinsakit']);
     
     // KONFIGUTASI
     Route::get('/konfigurasi/lokasikantor', [KonfigurasiController::class, 'lokasikantor']);
