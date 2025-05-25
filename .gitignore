@@ -1,7 +1,6 @@
 # Laravel defaults
 /vendor
 /node_modules
-/public/storage
 /public/hot
 /public/build
 /storage/*.key
@@ -15,6 +14,11 @@
 !storage/app/public/
 !storage/app/public/uploads/
 !storage/app/public/uploads/**
+
+# Ignore storage symlink
+/public/storage
+!public/storage/uploads/
+!public/storage/uploads/**
 
 # Environment and config
 .env
